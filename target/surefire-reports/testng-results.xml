@@ -1,17 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Surefire suite" duration-ms="22312" started-at="2019-02-24T06:19:46Z" finished-at="2019-02-24T06:20:09Z">
+  <suite name="FirstTestSuite" duration-ms="103310" started-at="2019-03-14T18:53:24Z" finished-at="2019-03-14T18:55:07Z">
     <groups>
     </groups>
-    <test name="Surefire test" duration-ms="22312" started-at="2019-02-24T06:19:46Z" finished-at="2019-02-24T06:20:09Z">
+    <test name="PositiveTest" duration-ms="68261" started-at="2019-03-14T18:53:24Z" finished-at="2019-03-14T18:54:32Z">
+      <class name="com.herokuapp.theinternet.KittyIpsum">
+        <test-method status="PASS" signature="getKittyIpsum()[pri:0, instance:com.herokuapp.theinternet.KittyIpsum@dfd3711]" name="getKittyIpsum" duration-ms="37119" started-at="2019-03-14T18:53:55Z" finished-at="2019-03-14T18:54:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getKittyIpsum -->
+      </class> <!-- com.herokuapp.theinternet.KittyIpsum -->
       <class name="com.herokuapp.theinternet.PositiveTests">
-        <test-method status="PASS" signature="loginTest()[pri:0, instance:com.herokuapp.theinternet.PositiveTests@5ebec15]" name="loginTest" duration-ms="22163" started-at="2019-02-24T06:19:46Z" finished-at="2019-02-24T06:20:09Z">
+        <test-method status="PASS" signature="loginTest()[pri:0, instance:com.herokuapp.theinternet.PositiveTests@38082d64]" name="loginTest" duration-ms="30925" started-at="2019-03-14T18:53:24Z" finished-at="2019-03-14T18:53:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
       </class> <!-- com.herokuapp.theinternet.PositiveTests -->
-    </test> <!-- Surefire test -->
-  </suite> <!-- Surefire suite -->
+    </test> <!-- PositiveTest -->
+    <test name="NegativeTest" duration-ms="34747" started-at="2019-03-14T18:54:33Z" finished-at="2019-03-14T18:55:07Z">
+      <class name="com.herokuapp.theinternet.NegativeTests">
+        <test-method status="PASS" signature="incorrectPasswordTest()[pri:0, instance:com.herokuapp.theinternet.NegativeTests@2d3fcdbd]" name="incorrectPasswordTest" duration-ms="18568" started-at="2019-03-14T18:54:33Z" finished-at="2019-03-14T18:54:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- incorrectPasswordTest -->
+        <test-method status="PASS" signature="incorrectUsernameTest()[pri:0, instance:com.herokuapp.theinternet.NegativeTests@2d3fcdbd]" name="incorrectUsernameTest" duration-ms="16168" started-at="2019-03-14T18:54:51Z" finished-at="2019-03-14T18:55:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- incorrectUsernameTest -->
+      </class> <!-- com.herokuapp.theinternet.NegativeTests -->
+    </test> <!-- NegativeTest -->
+  </suite> <!-- FirstTestSuite -->
 </testng-results>

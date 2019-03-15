@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="1" total="3" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="NegativeTestSuite" duration-ms="38968" started-at="2019-03-14T20:56:57Z" finished-at="2019-03-14T20:57:36Z">
+    <groups>
+    </groups>
+    <test name="NegativeTest" duration-ms="38968" started-at="2019-03-14T20:56:57Z" finished-at="2019-03-14T20:57:36Z">
+      <class name="com.herokuapp.theinternet.PosAndNegativeTests">
+        <test-method status="PASS" signature="incorrectPasswordTest()[pri:0, instance:com.herokuapp.theinternet.PosAndNegativeTests@724af044]" name="incorrectPasswordTest" duration-ms="21723" started-at="2019-03-14T20:56:57Z" finished-at="2019-03-14T20:57:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- incorrectPasswordTest -->
+        <test-method status="PASS" signature="incorrectUsernameTest()[pri:0, instance:com.herokuapp.theinternet.PosAndNegativeTests@724af044]" name="incorrectUsernameTest" duration-ms="17117" started-at="2019-03-14T20:57:18Z" finished-at="2019-03-14T20:57:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- incorrectUsernameTest -->
+      </class> <!-- com.herokuapp.theinternet.PosAndNegativeTests -->
+    </test> <!-- NegativeTest -->
+  </suite> <!-- NegativeTestSuite -->
+</testng-results>

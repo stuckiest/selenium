@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="NegativeTestSuite" verbose="1">
+	<!-- Using methods to run certain tests and not others -->
+	<test name="NegativeTest">
+
+		<classes>
+			<class name="com.herokuapp.theinternet.PosAndNegativeTests">
+				<methods>
+					<exclude name="loginTest"></exclude>
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
