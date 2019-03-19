@@ -41,7 +41,7 @@
 
 				<configuration>
 					<suiteXmlFiles>
-						<suiteXmlFile>src/test/resources/TestSuites/testng.xml</suiteXmlFile>
+						<suiteXmlFile>src/test/resources/TestSuites/NegativeTestsUsingMethod.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 

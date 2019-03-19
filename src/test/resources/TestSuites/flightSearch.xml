@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="flightSearch" verbose="1">
+
+	<test name="FlightSearchParis">
+
+		<parameter name="origin" value="slc"></parameter>
+		<parameter name="destination" value=" paris"></parameter>
+		<classes>
+			<class name="com.herokuapp.theinternet.flightSearch" />
+		</classes>
+	</test>
+
+	<test name="FlightSearchLondon">
+
+		<parameter name="origin" value="slc"></parameter>
+		<parameter name="destination" value=" london"></parameter>
+		<classes>
+			<class name="com.herokuapp.theinternet.flightSearch" />
+		</classes>
+	</test>
+
+</suite>

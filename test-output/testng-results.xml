@@ -1,21 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="1" total="3" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="NegativeTestSuite" duration-ms="38968" started-at="2019-03-14T20:56:57Z" finished-at="2019-03-14T20:57:36Z">
+  <suite name="flightSearch" duration-ms="107580" started-at="2019-03-19T23:34:43Z" finished-at="2019-03-19T23:36:31Z">
     <groups>
     </groups>
-    <test name="NegativeTest" duration-ms="38968" started-at="2019-03-14T20:56:57Z" finished-at="2019-03-14T20:57:36Z">
-      <class name="com.herokuapp.theinternet.PosAndNegativeTests">
-        <test-method status="PASS" signature="incorrectPasswordTest()[pri:0, instance:com.herokuapp.theinternet.PosAndNegativeTests@724af044]" name="incorrectPasswordTest" duration-ms="21723" started-at="2019-03-14T20:56:57Z" finished-at="2019-03-14T20:57:18Z">
+    <test name="FlightSearchParis" duration-ms="54822" started-at="2019-03-19T23:34:43Z" finished-at="2019-03-19T23:35:38Z">
+      <class name="com.herokuapp.theinternet.flightSearch">
+        <test-method status="PASS" signature="flightSearches(java.lang.String, java.lang.String)[pri:0, instance:com.herokuapp.theinternet.flightSearch@c038203]" name="flightSearches" duration-ms="54682" started-at="2019-03-19T23:34:43Z" finished-at="2019-03-19T23:35:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[slc]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ paris]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- incorrectPasswordTest -->
-        <test-method status="PASS" signature="incorrectUsernameTest()[pri:0, instance:com.herokuapp.theinternet.PosAndNegativeTests@724af044]" name="incorrectUsernameTest" duration-ms="17117" started-at="2019-03-14T20:57:18Z" finished-at="2019-03-14T20:57:36Z">
+        </test-method> <!-- flightSearches -->
+      </class> <!-- com.herokuapp.theinternet.flightSearch -->
+    </test> <!-- FlightSearchParis -->
+    <test name="FlightSearchLondon" duration-ms="52512" started-at="2019-03-19T23:35:38Z" finished-at="2019-03-19T23:36:31Z">
+      <class name="com.herokuapp.theinternet.flightSearch">
+        <test-method status="PASS" signature="flightSearches(java.lang.String, java.lang.String)[pri:0, instance:com.herokuapp.theinternet.flightSearch@6a4f787b]" name="flightSearches" duration-ms="52501" started-at="2019-03-19T23:35:38Z" finished-at="2019-03-19T23:36:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[slc]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ london]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- incorrectUsernameTest -->
-      </class> <!-- com.herokuapp.theinternet.PosAndNegativeTests -->
-    </test> <!-- NegativeTest -->
-  </suite> <!-- NegativeTestSuite -->
+        </test-method> <!-- flightSearches -->
+      </class> <!-- com.herokuapp.theinternet.flightSearch -->
+    </test> <!-- FlightSearchLondon -->
+  </suite> <!-- flightSearch -->
 </testng-results>

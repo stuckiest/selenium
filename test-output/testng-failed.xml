@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [FirstTestSuite]">
-  <test thread-count="5" name="NegativeTest(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.herokuapp.theinternet.NegativeTests">
+      <class name="com.herokuapp.theinternet.flightSearch">
         <methods>
-          <include name="incorrectPasswordTest"/>
+          <include name="NegativeTest"/>
         </methods>
-      </class> <!-- com.herokuapp.theinternet.NegativeTests -->
+      </class> <!-- com.herokuapp.theinternet.flightSearch -->
     </classes>
-  </test> <!-- NegativeTest(failed) -->
-</suite> <!-- Failed suite [FirstTestSuite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

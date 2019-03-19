@@ -3,7 +3,8 @@
 <suite name="NegativeTestSuite" verbose="1">
 	<!-- Using methods to run certain tests and not others -->
 	<test name="NegativeTest">
-
+		<!--Experimenting with using groups <groups> <run> <include name="SmokeTests" 
+			/> </run> </groups> -->
 		<classes>
 			<class name="com.herokuapp.theinternet.PosAndNegativeTests">
 				<methods>

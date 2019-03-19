@@ -3,14 +3,14 @@
 <suite name="FirstTestSuite" verbose="1" >
   <test name="PositiveTest" >
     <classes>
-       <class name="com.herokuapp.theinternet.PositiveTests" />
+      <!-- <class name="com.herokuapp.theinternet.PositiveTests" /> -->
        <class name="com.herokuapp.theinternet.KittyIpsum" />
     </classes>
   </test>
  
-  <test name="NegativeTest">
+  <!--  <test name="NegativeTest">
     <classes>
       <class name="com.herokuapp.theinternet.NegativeTests"/>
     </classes>
-  </test>
+  </test> -->
 </suite>

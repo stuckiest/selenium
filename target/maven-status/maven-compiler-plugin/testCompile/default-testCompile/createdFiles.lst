@@ -1,4 +1,4 @@
 com\herokuapp\theinternet\KittyIpsum.class
-com\herokuapp\theinternet\NegativeTests.class
+com\herokuapp\theinternet\PosAndNegativeTests.class
 com\herokuapp\theinternet\PositiveTests.class
-com\herokuapp\theinternet\SearchFlights.class
+com\herokuapp\theinternet\NegativeTests.class

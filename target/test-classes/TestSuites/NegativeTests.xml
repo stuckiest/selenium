@@ -2,16 +2,26 @@
 
 <suite name="NegativeTestSuite" verbose="1">
 
-	<test name="NegativeTest">
-	<!--Experimenting with using groups -->
-		<groups>
-			<run>
-				<include name="SmokeTests" />
-			</run>
-		</groups>
+	<test name="NegativeUsernameTest">
+
+		<parameter name="username" value="incorrectUsername"></parameter>
+		<parameter name="password" value="SuperSecretPassword!"></parameter>
+		<parameter name="expectedErrorMessage"
+			value="Your username is invalid!"></parameter>
 		<classes>
 			<class name="com.herokuapp.theinternet.NegativeTests" />
-			<class name="com.herokuapp.theinternet.KittyIpsum" />
 		</classes>
 	</test>
+
+	<test name="NegativePasswordTest">
+
+		<parameter name="username" value="tomsmith"></parameter>
+		<parameter name="password" value="incorrectPassword"></parameter>
+		<parameter name="expectedErrorMessage"
+			value="Your password is invalid!"></parameter>
+		<classes>
+			<class name="com.herokuapp.theinternet.NegativeTests" />
+		</classes>
+	</test>
+
 </suite>

@@ -5,10 +5,60 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class NegativeTests {
 
+	@Parameters({"username", "password", "expectedErrorMessage"})
+	@Test
+	public void NegativeTest(String username, String password, String expectedErrorMessage) {
+		System.out.println("Starting negativeTest");
+			
+		//create driver
+		System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
+		WebDriver nancy = new ChromeDriver();
+		
+		//open page
+		String url = "https://the-internet.herokuapp.com/login";
+		nancy.get(url);
+		
+		System.out.println("page is open");
+
+		// enter username
+		WebElement usernameInput = nancy.findElement(By.id("username"));
+		usernameInput.sendKeys(username);
+		
+		System.out.println("Using username: " + username);
+		
+		// enter password
+		WebElement passwordInput = nancy.findElement(By.id("password"));
+		passwordInput.sendKeys(password);
+		
+		System.out.println("Using password: " + password);
+
+		// click login button
+		WebElement loginButton = nancy.findElement(By.className("radius"));
+		loginButton.click();
+	
+		//verifications
+		//warning message is visible
+		WebElement errorMessageBanner = nancy.findElement(By.id("flash"));
+		String actualMessage = errorMessageBanner.getText();
+		Assert.assertTrue(actualMessage.contains(expectedErrorMessage),
+				"actuaMessage does not contain expectedErrorMessage\nexexpectedErrorMessage:"
+						+ expectedErrorMessage + "\nactualSuccessMessage: " + actualMessage);
+		
+		sleep(3000);
+	
+		//close all windows of browser
+		nancy.quit();
+		System.out.println("The page is closed.");
+	}
+	
+	
+	
+	/*
 	@Test(priority =1, enabled = true, groups = { "SmokeTests", "negativeTests"})
 	public void incorrectUsernameTest() {
 	
@@ -102,7 +152,7 @@ public class NegativeTests {
 		nancy.quit();
 		System.out.println("The page is closed.");
 	}
-	
+	*/
 	
 	private void sleep(long milliseconds) {
 		try {
